@@ -8,7 +8,8 @@ orbs:
 workflows:
   test-artifactory-orb:
     jobs:
-      - test-basic-commands
+      - test-basic-commands:
+          context: jfrog-context
 
 jobs:
   test-basic-commands:
